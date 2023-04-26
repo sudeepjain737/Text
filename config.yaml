@@ -1,0 +1,15 @@
+# training config
+train_data_path: train_data.csv
+test_data_path: test_data.csv
+model_save_path: saved_model.pkl
+config_save_path: config.pkl
+vectorizer_config:
+  analyzer: word
+  stop_words: english
+  ngram_range: [1,2]
+  max_features: 1000
+clf_config:
+  kernel: linear
+  C: 1.0
+  class_weight: balanced
+label_encoder_classes: ['turn_off_lights_bathroom', 'turn_off_lights_bedroom', 'turn_off_lights_kitchen', 'turn_on_lights_bathroom', 'turn_on_lights_bedroom', 'turn_on_lights_kitchen']
